@@ -227,3 +227,34 @@ nav {
 </tr>
 </table>
 </section>
+
+<section id="reservar">
+
+<input type="text" id="bookName" placeholder="Nombre">
+
+<select id="bookService">
+<option>Corte & Estilo</option>
+<option>Maquillaje</option>
+</select>
+
+<button onclick="sendWhatsApp()">
+Reservar por WhatsApp
+</button>
+
+</section>
+
+
+<script>
+function sendWhatsApp(){
+
+const name=document.getElementById('bookName').value;
+const service=document.getElementById('bookService').value;
+
+const text=`Hola, soy ${name} y quiero reservar ${service}`;
+
+window.open(`https://wa.me/59170077166?text=${encodeURIComponent(text)}`,'_blank');
+}
+</script>
+
+
+</body>
