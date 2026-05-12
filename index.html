@@ -44,6 +44,55 @@ body {
 section {
   padding:100px 5vw;
 }
+nav {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+}
+
+.nav-links {
+  display:flex;
+  gap:40px;
+  list-style:none;
+}
+
+.mobile-menu {
+  display:none;
+}
 </style>
 </head>
 <body>
+  <nav id="navbar">
+<a href="#inicio" class="nav-logo">
+<div class="logo-mark">L</div>
+
+<div>
+<span class="logo-name">Lumière</span>
+<span class="logo-sub">Studio de Belleza</span>
+</div>
+</a>
+
+<ul class="nav-links">
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#trabajos">Trabajos</a></li>
+<li><a href="#precios">Precios</a></li>
+<li><a href="#horarios">Horarios</a></li>
+<li><a href="#reservar" class="nav-cta">Reservar</a></li>
+</ul>
+
+<button class="burger" id="burger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#servicios" class="mm-link">Servicios</a>
+<a href="#trabajos" class="mm-link">Trabajos</a>
+<a href="#precios" class="mm-link">Precios</a>
+<a href="#horarios" class="mm-link">Horarios</a>
+<a href="#reservar" class="mm-link">Reservar</a>
+</div>
